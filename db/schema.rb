@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 20140427011213) do
   create_table "foods", force: true do |t|
     t.string   "name"
     t.string   "pic"
+    t.text     "description"
+    t.string   "category"
+    t.integer  "level"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
